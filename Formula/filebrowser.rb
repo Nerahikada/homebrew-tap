@@ -5,21 +5,21 @@
 class Filebrowser < Formula
   desc "File Browser is a create-your-own-cloud-kind of software where you can install it on a server, direct it to a path and then access your files through a nice web interface"
   homepage "https://filebrowser.org"
-  version "2.27.0-4fc63f9"
+  version "2.27.0-eb63150"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Nerahikada/filebrowser/releases/download/v2.27.0-4fc63f9/darwin-amd64-filebrowser.tar.gz"
-      sha256 "93db7bc976597f2bd18d111a7c1f8a4fe62d1e0db44dd48cf875ef490a2076b0"
+      url "https://github.com/Nerahikada/filebrowser/releases/download/v2.27.0-eb63150/darwin-amd64-filebrowser.tar.gz"
+      sha256 "051a9af9b80487413b92b3217d0762ae83d6db9cbb16dd7bdfb51d338807c78a"
 
       def install
         bin.install "filebrowser"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Nerahikada/filebrowser/releases/download/v2.27.0-4fc63f9/darwin-arm64-filebrowser.tar.gz"
-      sha256 "c742c62e4532c19c68c0511255915a124439bfd5b8e57784b4cef02c5ba47853"
+      url "https://github.com/Nerahikada/filebrowser/releases/download/v2.27.0-eb63150/darwin-arm64-filebrowser.tar.gz"
+      sha256 "ea3170fd0ade1e70f1828bd8c5e961e047c91ba1060630d54adc820b002cd58c"
 
       def install
         bin.install "filebrowser"
@@ -29,24 +29,24 @@ class Filebrowser < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/Nerahikada/filebrowser/releases/download/v2.27.0-4fc63f9/linux-armv6-filebrowser.tar.gz"
-      sha256 "85d8e52b42d196071f18c85636bfbfaa01f1471d98182319b384a65f162e7d27"
+      url "https://github.com/Nerahikada/filebrowser/releases/download/v2.27.0-eb63150/linux-armv6-filebrowser.tar.gz"
+      sha256 "0fe57a0fd26f78354519b6dbfc6098adf80b6ce34a01110fbedd55d12962b140"
 
       def install
         bin.install "filebrowser"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nerahikada/filebrowser/releases/download/v2.27.0-4fc63f9/linux-arm64-filebrowser.tar.gz"
-      sha256 "69a3e8defa9dfaaf4fa8ef84bb1730c5c30f96c954c1ffa8803eed23c6efa994"
+      url "https://github.com/Nerahikada/filebrowser/releases/download/v2.27.0-eb63150/linux-arm64-filebrowser.tar.gz"
+      sha256 "9b60aa97ed41cc156d1183c6290d0f2236ab275722a0e141be9e50b0a81ef3e1"
 
       def install
         bin.install "filebrowser"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Nerahikada/filebrowser/releases/download/v2.27.0-4fc63f9/linux-amd64-filebrowser.tar.gz"
-      sha256 "f9c2fa5e4be2e4ed874419bfd7ae9c9d0fd36bc3bc1eae2ebf20c3c31d92d89d"
+      url "https://github.com/Nerahikada/filebrowser/releases/download/v2.27.0-eb63150/linux-amd64-filebrowser.tar.gz"
+      sha256 "1608a05d14c9b981f3b7fda8e22d1783f2b5c7db78bc989c72c83cf9eb637062"
 
       def install
         bin.install "filebrowser"
